@@ -35,8 +35,8 @@ virtualhosts:
   selector:
     app: apigee-ingressgateway
     ingress_name: apigee-ingress
-  sslCertPath: keystore_eval-group.pem
-  sslKeyPath: keystore_eval-group.key
+  sslCertPath: "certs/keystore_eval-group.pem"
+  sslKeyPath: "certs/keystore_eval-group.key"
 
 mart:
   serviceAccountPath: "$PROJECT_ID-apigee-mart.json"
@@ -58,6 +58,4 @@ watcher:
   serviceAccountPath: "$PROJECT_ID-apigee-watcher.json"
 EOF
 
-yq --version 2>/dev/null || go install github.com/mikefarah/yq/v4@latest
-yq "$OVERRIDES"
-
+go run github.com/mikefarah/yq/v4@latest "$OVERRIDES"

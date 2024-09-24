@@ -1,7 +1,12 @@
 # Global setings
-export PROJECT_ID="training-gcp-demos"
+export PROJECT_ID="qwiklabs-gcp-00-1686b278b2a9"
 export ORG_NAME="$PROJECT_ID"
-export ANALYTICS_REGION="us-central1"
+
+# GKE settings
+export CLUSTER_NAME="apigee-hybrid"
+export CLUSTER_REGION="${ANALYTICS_REGION}"
+export CLUSTER_LOCATION="us-east1-d"
+export ANALYTICS_REGION="us-east1"
 export RUNTIMETYPE=HYBRID
 
 # Apigee Env/Env Group settings
@@ -9,11 +14,6 @@ export RUNTIMETYPE=HYBRID
 export DOMAIN="hybrid.api.ronoaldo.dev.br"
 export ENV_NAME="eval"
 export ENV_GROUP="eval-group"
-
-# GKE settings
-export CLUSTER_NAME="apigee-hybrid-cluster"
-export CLUSTER_REGION="us-central1"
-export CLUSTER_LOCATION="us-central1-c"
 
 # Apigee K8S Helm Charts and Namespace setup
 export APIGEE_HELM_CHARTS_HOME=$HOME/workspace/apigee-hybrid/helm-charts
