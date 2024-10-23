@@ -24,11 +24,17 @@ envs:
 
 cassandra:
   hostNetwork: false
+  backup:
+    enabled: true
+    image:
+      pullPolicy: Always
+    cloudProvider: CSI
+    schedule: '0 * * 11 *'
 
 ingressGateways:
 - name: apigee-ingress
-  replicaCountMin: 1
-  replicaCountMax: 10
+  replicaCountMin: 2
+  replicaCountMax: 4
 
 virtualhosts:
 - name: $ENV_GROUP
@@ -49,6 +55,7 @@ logger:
   serviceAccountPath: "$PROJECT_ID-apigee-logger.json"
 
 metrics:
+  enabled: true
   serviceAccountPath: "$PROJECT_ID-apigee-metrics.json"
 
 udca:

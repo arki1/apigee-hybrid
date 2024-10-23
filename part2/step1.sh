@@ -4,7 +4,6 @@ set -e
 gcloud container clusters create "${CLUSTER_NAME}" \
   --project "${PROJECT_ID}" \
   --zone "${CLUSTER_LOCATION}" \
-  --cluster-version "1.30.3-gke.1969001" \
   --release-channel "regular" \
   --machine-type "e2-medium" \
   --disk-type "pd-balanced" \

@@ -1,19 +1,19 @@
-# Global setings
-export PROJECT_ID="qwiklabs-gcp-00-1686b278b2a9"
+# Apigee setings
+export PROJECT_ID="training-gcp-demos"
+export RUNTIMEVERSION=1.13.2
+export RUNTIMETYPE=HYBRID
+export ANALYTICS_REGION="us-central1"
 export ORG_NAME="$PROJECT_ID"
+export ENV_NAME="eval"
+export ENV_GROUP="eval-group"
 
 # GKE settings
 export CLUSTER_NAME="apigee-hybrid"
 export CLUSTER_REGION="${ANALYTICS_REGION}"
-export CLUSTER_LOCATION="us-east1-d"
-export ANALYTICS_REGION="us-east1"
-export RUNTIMETYPE=HYBRID
+export CLUSTER_LOCATION="${ANALYTICS_REGION}-c"
 
-# Apigee Env/Env Group settings
 # Changing the DOMAIN later requires a new certificate; use the helm upgrade command
 export DOMAIN="hybrid.api.ronoaldo.dev.br"
-export ENV_NAME="eval"
-export ENV_GROUP="eval-group"
 
 # Apigee K8S Helm Charts and Namespace setup
 export APIGEE_HELM_CHARTS_HOME=$HOME/workspace/apigee-hybrid/helm-charts

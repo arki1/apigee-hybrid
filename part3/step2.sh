@@ -11,4 +11,4 @@ INGRESS_PORT=443
 curl -k -sS --fail \
     -H Host:$DOMAIN \
     --resolve $DOMAIN:$INGRESS_PORT:$INGRESS_IP_ADDRESS \
-    https://$DOMAIN:$INGRESS_PORT/mockapi/echo | jq .
+    https://$DOMAIN:$INGRESS_PORT/hello/v1/echo | jq .
