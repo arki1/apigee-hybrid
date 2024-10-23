@@ -1,15 +1,16 @@
-## Apigee Hybrid Setup
+# Apigee Hybrid Setup
 
 This is a collection of small scripts to help set up Apigee Hybrid.
 This project provides a "script approach" for the steps available in
 [the Apigee Hybrid documentation](https://cloud.google.com/apigee/docs/hybrid/v1.13/precog-overview).
 
-These scripts may be better automated using Terraform in the future.
+These scripts are intended for study pourposes only.
+A better aproach for automation would be using Terraform instead.
 
 **Prerequisites:**
 
-* Before you begin, ensure you have sourced the `environment.sh` file. Start with `part1/step1.sh`.
-* If your Cloud Shell disconnects, ensure you have sourced `environment.sh` again.
+* Before you begin, ensure you have sourced the `configure.sh` file. Start with `part1/step1.sh`.
+* If your Cloud Shell disconnects, ensure you have sourced `configure.sh` again.
 
 **Steps:**
 
