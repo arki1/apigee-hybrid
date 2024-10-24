@@ -1,3 +1,4 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/install-expose-apigee-ingress
 set -e
 
 kubectl get svc -n $APIGEE_NAMESPACE -l app=apigee-ingressgateway

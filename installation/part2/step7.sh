@@ -1,3 +1,4 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/install-enable-synchronizer-access
 set -e
 set -x
 

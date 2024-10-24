@@ -1,3 +1,4 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/install-deploy-proxy
 echo "Testing $DOMAIN (with curl --resolve) ..."
 
 INGRESS_IP_ADDRESS=$(kubectl get svc -n $APIGEE_NAMESPACE -l app=apigee-ingressgateway \

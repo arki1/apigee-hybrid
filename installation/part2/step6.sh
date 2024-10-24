@@ -1,3 +1,6 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/install-create-overrides
+# This step provides a starting version of your overrides.yaml.
+# Change it properly to meet the required needs for your environment.
 set -e
 
 OVERRIDES="$APIGEE_HELM_CHARTS_HOME/overrides.yaml"

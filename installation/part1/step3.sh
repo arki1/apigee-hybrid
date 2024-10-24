@@ -1,3 +1,4 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/precog-add-environment
 set -e
 
 curl -sS --fail -H "Authorization: Bearer $TOKEN" -X POST -H "content-type:application/json"   -d '{

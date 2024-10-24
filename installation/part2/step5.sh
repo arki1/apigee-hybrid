@@ -1,5 +1,5 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/install-create-tls-certificates
 set -e
-set -x
 
 # For valid certificates, use an aproach similar to this:
 # - https://cloud.google.com/apigee/docs/hybrid/v1.13/lets-encrypt

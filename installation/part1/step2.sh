@@ -1,3 +1,4 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/precog-provision
 set -e
 
 # Create the organization

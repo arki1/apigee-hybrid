@@ -1,3 +1,4 @@
+# Ref: https://cloud.google.com/apigee/docs/hybrid/v1.13/install-create-cluster
 set -e
 
 # Create cluster with default mini-node pool (we cannot name the default-pool at cluster creation)
